@@ -1,0 +1,24 @@
+{
+  "workbench.colorCustomizations": {//Styles used for front projects
+    "activityBar.activeBackground": "#1f543c",
+    "activityBar.activeBorder": "#ffffff",
+    "activityBar.background": "#007641",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.inactiveForeground": "#fff",
+    "activityBarBadge.background": "#fff",
+    "activityBarBadge.foreground": "#000",
+    "statusBar.background": "#007641",
+    "statusBar.foreground": "#fff",
+    "statusBarItem.hoverBackground": "#1f543c",
+    // "titleBar.activeBackground": "#68217a",
+    // "titleBar.activeForeground": "#e7e7e7",
+    // "titleBar.inactiveBackground": "#68217a99",
+    // "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#68217A",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+}
