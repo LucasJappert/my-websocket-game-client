@@ -1,25 +1,20 @@
+// import './style.css';
 import './style.css';
-import MyWebSocket from './web-socket/web-socket.model';
 import "./dom-events";
-import { Action } from './utils/enums.utils';
-import MessageData from './models/message-data.model';
-class Game {
-    myWebSocket: MyWebSocket = new MyWebSocket('ws://localhost:8080');
+import MyUser from './models/user.model.ts';
+import { UpdateFaviconIcon } from './utils/dom.utils.ts';
+export default class Game {
+    static myUser: MyUser;
 
-    Login(userName: string) {
-        const message: MessageData = {
-            id: 0,
-            action: Action.Login,
-            options: {
-                userName
-            }
-        };
-        this.myWebSocket.SendMessage(message);
+    static async TryConnectWithServer() {
+        this.myUser = new MyUser(new WebSocket("ws://localhost:8080"));
     }
-
 }
 
-export let game = new Game();
+Game.TryConnectWithServer();
+
+UpdateFaviconIcon("/no-logged.png");
+
 
 
 
